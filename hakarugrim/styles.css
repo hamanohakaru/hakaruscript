@@ -97,7 +97,7 @@
 @media (max-width: 800px) {
     body {
         flex-direction: column;
-        touch-action: none;
+        overflow: hidden;
     }
 
     canvas {
