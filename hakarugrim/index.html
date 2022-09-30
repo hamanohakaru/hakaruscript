@@ -24,15 +24,15 @@
         <canvas></canvas>
         <input id="line-width" type="range" min="1" max="5" value="5" step="0.1" style="font-size: 5px" />
         <div class="btns">
-            <button id="mode-btn" style="font-size: 5px">채우기</button>
-            <button id="destroy-btn" style="font-size: 5px">지우기</button>
-            <button id="erasor-btn" style="font-size: 5px">지우개</button>
-            <label for="file" style="font-size: 5px">
+            <button id="mode-btn">채우기</button>
+            <button id="destroy-btn">지우기</button>
+            <button id="erasor-btn">지우개</button>
+            <label for="file">
                 사진추가
                 <input type="file" accept="image/*" id="file" />
             </label>
-            <input type="text" placeholder="텍스트를 입력 후 더블클릭 :)" onfocus="this.placeholder=''" onblur="this.placeholder='텍스트를 입력 후 더블클릭 :)'" id="text" style="font-size: 4px" />
-            <button id="save" style="font-size: 5px">다운로드</button>
+            <input type="text" placeholder="텍스트를 입력 후 더블클릭 :)" onfocus="this.placeholder=''" onblur="this.placeholder='텍스트를 입력 후 더블클릭 :)'" id="text" />
+            <button id="save">다운로드</button>
         </div>
         <script src="app.js"></script>
     </body>
