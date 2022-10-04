@@ -1,97 +1,98 @@
 @import "reset.css";
+@media (max-width: 800px) {
+    body {
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        gap: 20px;
+        justify-content: space-between;
+        align-items: flex-start;
+        background-color: gainsboro;
+        padding: 20px;
+    }
+    canvas {
+        width: 300px;
+        height: 500px;
+        background-color: white;
+        border-radius: 5px;
+        padding: 20px;
+    }
 
-body {
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    gap: 20px;
-    justify-content: space-between;
-    align-items: flex-start;
-    background-color: gainsboro;
-    padding: 20px;
-}
-canvas {
-    width: 300px;
-    height: 500px;
-    background-color: white;
-    border-radius: 5px;
-    padding: 20px;
-}
+    body {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
 
-body {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
+    .btns {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
 
-.btns {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-}
+    .color-options {
+        display: flex;
+        flex-direction: row;
+        gap: 5px;
+        align-items: center;
+    }
 
-.color-options {
-    display: flex;
-    flex-direction: row;
-    gap: 5px;
-    align-items: center;
-}
+    .color-option {
+        width: 20px;
+        height: 20px;
+        border-radius: 25%;
+        cursor: pointer;
+        border: 2px solid white;
+        transition: transform ease-in-out 0.1s;
+    }
 
-.color-option {
-    width: 20px;
-    height: 20px;
-    border-radius: 25%;
-    cursor: pointer;
-    border: 2px solid white;
-    transition: transform ease-in-out 0.1s;
-}
+    .color-option:hover {
+        transform: scale(1.2);
+    }
 
-.color-option:hover {
-    transform: scale(1.2);
-}
+    input#color {
+        overflow: hidden;
+        border: none;
+        border-radius: 5px;
+        background-color: white;
+    }
 
-input#color {
-    overflow: hidden;
-    border: none;
-    border-radius: 5px;
-    background-color: white;
-}
+    button,
+    label {
+        all: unset;
+        padding: 10px 0px;
+        text-align: center;
+        background-color: rgb(13, 42, 59);
+        color: white;
+        font-weight: 600;
+        cursor: pointer;
+        border-radius: 10px;
+        border: 5px solid white;
+        transition: opacity linear 0.2s;
+    }
 
-button,
-label {
-    all: unset;
-    padding: 10px 0px;
-    text-align: center;
-    background-color: rgb(13, 42, 59);
-    color: white;
-    font-weight: 600;
-    cursor: pointer;
-    border-radius: 10px;
-    border: 5px solid white;
-    transition: opacity linear 0.2s;
-}
+    button:hover {
+        opacity: 0.85;
+    }
 
-button:hover {
-    opacity: 0.85;
-}
+    input#text {
+        all: unset;
+        padding: 10px 0px;
+        text-align: center;
+        border-radius: 5px;
+        font-weight: 600;
+        background-color: white;
+    }
 
-input#text {
-    all: unset;
-    padding: 10px 0px;
-    text-align: center;
-    border-radius: 5px;
-    font-weight: 600;
-    background-color: white;
-}
+    input::placeholder {
+        font-size: 13px;
+        text-align: center;
+        opacity: 0.5;
+        color: black;
+    }
 
-input::placeholder {
-    font-size: 13px;
-    text-align: center;
-    opacity: 0.5;
-    color: black;
-}
-
-input#file {
-    display: none;
+    input#file {
+        display: none;
+    }
 }
