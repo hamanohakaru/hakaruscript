@@ -10,8 +10,8 @@ const lineWidth = document.getElementById("line-width");
 const canvas = document.querySelector("canvas");
 const ctx = canvas.getContext("2d");
 
-const CANVAS_WIDTH = 300;
-const CANVAS_HEIGHT = 500;
+const CANVAS_WIDTH = 800;
+const CANVAS_HEIGHT = 800;
 
 canvas.width = 800;
 canvas.height = 800;
@@ -112,10 +112,10 @@ function onSaveClick() {
 }
 
 canvas.addEventListener("dblclick", onDoubleClick);
-canvas.addEventListener("touchmove", onMove);
-canvas.addEventListener("touchdown", startPainting);
-canvas.addEventListener("touchup", cancelPainting);
-canvas.addEventListener("touchleave", cancelPainting);
+canvas.addEventListener("mousemove", onMove);
+canvas.addEventListener("mousedown", startPainting);
+canvas.addEventListener("mouseup", cancelPainting);
+canvas.addEventListener("mouseleave", cancelPainting);
 canvas.addEventListener("click", onCanvasClick);
 
 lineWidth.addEventListener("change", onLineWidthChange);
