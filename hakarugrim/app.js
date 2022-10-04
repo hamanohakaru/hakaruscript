@@ -112,10 +112,10 @@ function onSaveClick() {
 }
 
 canvas.addEventListener("dblclick", onDoubleClick);
-canvas.addEventListener("mousemove", onMove);
-canvas.addEventListener("mousedown", startPainting);
-canvas.addEventListener("mouseup", cancelPainting);
-canvas.addEventListener("mouseleave", cancelPainting);
+canvas.addEventListener("touchmove", onMove);
+canvas.addEventListener("touchdown", startPainting);
+canvas.addEventListener("touchup", cancelPainting);
+canvas.addEventListener("touchleave", cancelPainting);
 canvas.addEventListener("click", onCanvasClick);
 
 lineWidth.addEventListener("change", onLineWidthChange);
