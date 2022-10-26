@@ -2,7 +2,7 @@
 <html>
     <head>
         <meta charset="utf-8" />
-        <title>Gamedev Canvas Workshop - lesson 10: finishing up</title>
+        <title>하씨가문</title>
         <style>
             * {
                 padding: 0;
@@ -16,6 +16,9 @@
         </style>
     </head>
     <body>
+        <div style="padding-top: 150px">
+            <h1 style="padding-left: 425px; padding-bottom: 50px; color: #ff5675">하씨가문의 난이도 최상 게임</h1>
+        </div>
         <canvas id="myCanvas" width="480" height="320"></canvas>
 
         <script>
@@ -39,7 +42,7 @@
             var brickOffsetTop = 40;
             var brickOffsetLeft = 5;
             var score = 0;
-            var lives = 2;
+            var lives = 5;
 
             var bricks = [];
             for (var c = 0; c < brickColumnCount; c++) {
@@ -179,5 +182,8 @@
 
             draw();
         </script>
+
+        <span style="display: block; padding-left: 450px; padding-top: 200px; font-size: 18px; font-weight: 600; color: #ff5675">마우스 커서는 이쪽에서 하는게 게임하기 편함</span>
+        <span style="display: block; padding-left: 563px; padding-top: 200px; font-size: 16px; font-weight: 600; color: #ff5675">제작자 : 하씨그룹 장남</span>
     </body>
 </html>
