@@ -16,8 +16,14 @@
         </style>
     </head>
     <body>
-        <div style="padding-top: 150px">
-            <h1 style="padding-left: 425px; padding-bottom: 50px; color: #ff5675">하씨가문의 난이도 최상 게임</h1>
+        <div style="display: flex; justify-content: center; margin-top: 100px; margin-bottom: 50px">
+            <h1 style="color: #ff5675; font-size:20px;">
+                &hearts;
+                <span style="color: transparent; background-image: linear-gradient(90deg, red, orange, yellow, green, blue, navy, purple); -webkit-background-clip: text"
+                    >하(찮아도 너무 하찮은)씨가문</span
+                >
+                의 난이도 최상 게임 &hearts;
+            </h1>
         </div>
         <canvas id="myCanvas" width="480" height="320"></canvas>
 
@@ -30,7 +36,7 @@
             var dx = 3;
             var dy = -3;
             var paddleHeight = 5;
-            var paddleWidth = 10;
+            var paddleWidth = 13;
             var paddleX = (canvas.width - paddleWidth) / 2;
             var rightPressed = false;
             var leftPressed = false;
@@ -183,7 +189,11 @@
             draw();
         </script>
 
-        <span style="display: block; padding-left: 450px; padding-top: 200px; font-size: 18px; font-weight: 600; color: #ff5675">마우스 커서는 이쪽에서 하는게 게임하기 편함</span>
-        <span style="display: block; padding-left: 563px; padding-top: 200px; font-size: 16px; font-weight: 600; color: #ff5675">제작자 : 하씨그룹 장남</span>
+        <span style="margin-top: 120px; display: flex; justify-content: center; font-size: 18px; font-weight: 600; color: #ff5675">마우스 커서는 이쪽에서 하는게 게임하기 편함</span>
+        <p style="margin-top: 50px; margin-bottom:50px; display: flex; justify-content: center; font-size: 16px; font-weight: 600; color: #ff5675">
+            제작자 : 하씨그룹 장남&nbsp&nbsp <span style="color: black">"</span><span style="color: transparent; background-image: linear-gradient(90deg, red, orange, yellow, green, blue, navy, purple); -webkit-background-clip: text"
+                    ">하마노 하카루</span
+            ><span style="color: black">"</span>
+        </p>
     </body>
 </html>
