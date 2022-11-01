@@ -283,26 +283,3 @@ html.not-scroll-top-0 .top-bar {
     color: white;
     text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
-
-.page-top {
-    position: fixed;
-    bottom: 30px;
-    right: 30px;
-    width: 50px;
-    height: 50px;
-    background: #000000;
-    color: #fff;
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    line-height: 5px;
-}
-
-.page-top:hover {
-    background-color: #fff;
-    color: #000000;
-    border: 1px solid #000000;
-    width: 49px;
-    height: 49px;
-}

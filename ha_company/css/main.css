@@ -112,8 +112,8 @@ main {
 
 .scroll-downs {
     position: fixed;
-    top: 100px;
-    left: 47%;
+    bottom: 5px;
+    left: 48%;
     margin: auto;
 
     width: 34px;
@@ -121,8 +121,8 @@ main {
 }
 .mousey {
     width: 3px;
-    padding: 10px 15px;
-    height: 35px;
+    padding: 8px 12px;
+    height: 30px;
     border: 2px solid black;
     border-radius: 25px;
     opacity: 0.75;
@@ -150,4 +150,19 @@ main {
         transform: translateY(15px);
         opacity: 0;
     }
+}
+
+.page-top {
+    display: none;
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+    width: 50px;
+    height: 30px;
+    color: black;
+    text-shadow: -1px 0 white, 0 1px white, 1px 0 white, 0 -1px white;
+    text-align: center;
+    line-height: 5px;
+    font-size: 20px;
+    font-weight: bold;
 }
