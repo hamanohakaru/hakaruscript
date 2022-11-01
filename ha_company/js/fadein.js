@@ -3,5 +3,5 @@ $(document).ready(function () {
 });
 
 $(document).ready(function () {
-    $(".fadeIn2").fadeIn(17000);
+    $(".fadeIn2").fadeIn(14000);
 });
