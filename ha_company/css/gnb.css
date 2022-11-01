@@ -20,12 +20,21 @@ a {
     text-decoration: none;
 }
 
+.bar {
+    background-color: white;
+    width: 100%;
+}
+
 h1 {
+    width: 380px;
+    height: 44px;
+    background: white;
     position: fixed;
-    left: 20px;
-    top: 10px;
+    left: 0;
+    top: 0;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
+    padding-left: 20px;
     align-items: center;
     font-size: 16px;
     font-weight: bold;
@@ -200,7 +209,7 @@ body {
     right: 10%;
     display: block;
     height: 44px;
-    transition: height 0.3s, top 0.3s, left 0.3s, right 0.3s;
+    transition: height 0.7s, top 0.7s, left 0.7s, right 0.7s;
     overflow-y: hidden;
 }
 
@@ -252,11 +261,15 @@ html.not-scroll-top-0 .top-bar {
 }
 
 .lg {
+    width: 192px;
+    height: 44px;
+    background-color: white;
     position: fixed;
-    right: 20px;
-    top: 10px;
+    right: 0;
+    top: 0;
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
+    padding-right: 20px;
     align-items: center;
     font-size: 16px;
     font-weight: bold;
