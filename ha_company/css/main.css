@@ -1,9 +1,23 @@
-main {
-    margin-top: 300px;
+html {
+    overflow: hidden;
 }
 
-#fadeIn {
+html,
+body {
+    width: 100%;
+}
+
+main {
+    margin-top: 220px;
+}
+
+.fadeIn,
+.fadeIn2 {
     display: none;
+}
+
+.fadeIn2 {
+    margin-bottom: 210px;
 }
 
 #center {
@@ -24,10 +38,9 @@ main {
 
 .hideme {
     opacity: 0;
-    background: black;
     width: 100%;
     height: 500px;
-    margin-top: 400px;
+    margin-top: 445px;
     position: relative;
 }
 
@@ -36,7 +49,7 @@ main {
     position: absolute;
     top: -45px;
     left: 10px;
-    color: white;
+    color: black;
     font-size: 50px;
     font-weight: bold;
 }
@@ -46,7 +59,53 @@ main {
     position: absolute;
     right: 10px;
     bottom: -45px;
-    color: white;
+    color: black;
     font-size: 50px;
+    font-weight: bold;
+}
+
+.hideme2 {
+    margin-bottom: 210px;
+    opacity: 0;
+    width: 100%;
+    height: 500px;
+    margin-top: 435px;
+    position: relative;
+    background: black;
+}
+
+.hideme2 .me_3 {
+    top: 20px;
+    opacity: 0;
+    position: absolute;
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+    left: 20px;
+}
+
+.hideme2 .me_4 {
+    opacity: 0;
+    position: absolute;
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+    right: 20px;
+    bottom: 20px;
+}
+
+.fadeIn2 .text {
+    /* width: 1500px; */
+    width: 100%;
+    height: 500px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fadeIn2 .text .me_5 {
+    color: black;
+    font-size: 40px;
     font-weight: bold;
 }
