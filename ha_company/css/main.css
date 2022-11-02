@@ -113,7 +113,7 @@ main {
 .scroll-downs {
     position: fixed;
     bottom: 5px;
-    left: 48%;
+    left: 49%;
     margin: auto;
 
     width: 34px;
@@ -150,6 +150,14 @@ main {
         transform: translateY(15px);
         opacity: 0;
     }
+}
+
+.top-btn {
+    display: none;
+}
+
+.fa-sharp {
+    display: none;
 }
 
 .page-top {
