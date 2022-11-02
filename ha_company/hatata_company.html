@@ -5,24 +5,25 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/assets/owl.carousel.min.css" />
-        <script src="https://kit.fontawesome.com/4f8c2da61b.js" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/assets/owl.theme.default.min.css" />
-
+        <script src="https://kit.fontawesome.com/4f8c2da61b.js" crossorigin="anonymous"></script>
         <script src="js/app.js"></script>
         <script src="js/hide.js"></script>
         <script src="js/fadein.js"></script>
-
-        <link rel="stylesheet" href="css/footer.css" />
+        <script src="js/scroll.js"></script>
+        <script src="js/top.js"></script>
+        <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
         <link rel="stylesheet" href="css/gnb.css" />
         <link rel="stylesheet" href="css/main.css" />
         <link rel="stylesheet" href="css/login.css" />
-        <title>HATATA COMPANY</title>
+        <link rel="stylesheet" href="css/footer.css" />
+        <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+        <title>HATATA Corp.</title>
     </head>
     <body>
         <h1>
-            <a href="index.html">HAKARU HATATA HAGIS CO.</a>
+            <a href="index.html">HHH CORPORATION</a>
         </h1>
         <div class="top-bar text-align-center line-height-0-ch-only">
             <nav class="menu-box-1 inline-block">
@@ -30,10 +31,10 @@
                     <li class="cell">
                         <a href="#" class="block">COMPANY</a>
                         <ul>
-                            <li><a href="hamano_company.html" class="block">HAMANO COMPANY</a></li>
-                            <li><a href="hakaru_company.html" class="block">HAKARU COMPANY</a></li>
-                            <li><a href="hatata_company.html" class="block">HATATA COMPANY</a></li>
-                            <li><a href="hagis_company.html" class="block">HAGIS COMPANY</a></li>
+                            <li><a href="hamano_company.html" class="block">HAMANO</a></li>
+                            <li><a href="hakaru_company.html" class="block">HAKARU</a></li>
+                            <li><a href="hatata_company.html" class="block">HATATA</a></li>
+                            <li><a href="hagis_company.html" class="block">HAGIS</a></li>
                         </ul>
                     </li>
                     <li class="cell cell_2">
@@ -75,7 +76,44 @@
         <main>
             <div id="fadeIn">
                 <div id="center">
-                    <h2>HATATA COMPANY</h2>
+                    <h2>HATATA</h2>
+                </div>
+            </div>
+            <div class="hideme">
+                <p class="me_1">
+                    WE ARE DIFFERENT <br />
+                    WE ARE THE ONE <br />
+                    WE ARE OF THE <span style="text-decoration: underline">HA</span> FAMILY
+                </p>
+
+                <p class="me_2">AND WE ARE WINNER</p>
+            </div>
+
+            <div class="hideme2">
+                <span class="me_3">
+                    SO MANY PEOPLE SAID ME, <br />
+                    "YOU'RE NOT GENIUS. SO GIVE UP NOW." <br />
+                    BUT I'M OKAY. I ALWAYS TRUST ME. BOOM !
+                </span>
+
+                <span class="me_4">
+                    SO, YOU GUYS NEVER GIVE UP. <br />
+                    YOUR LIFE IS YOURS. <br />
+                    AND YOU'RE THE HERO OF YOUR LIFE. <br />
+                    SO, DON'T BE SCARED. OF YOU.
+                </span>
+            </div>
+
+            <div class="fadeIn2">
+                <div class="text">
+                    <span class="me_5">
+                        HAMANO <br />
+                        HATATA <br />
+                        HAGIS <br />
+                        HHH <br />
+                        <br />
+                        HHH CORPORATION.
+                    </span>
                 </div>
             </div>
         </main>
@@ -95,7 +133,7 @@
                 </p>
             </div>
             <div class="center-f">
-                <span class="phone-num">HAMANO & HATATA & HAGIS COMPANY</span>
+                <span class="phone-num">HHH CORPORATION</span>
             </div>
             <div class="right-f">
                 <span class="time">WORK : 09:00 ~ 18:00</span>
@@ -104,5 +142,20 @@
         </footer>
 
         <a href="#" class="page-top">TOP</a>
+
+        <script>
+            jQuery(function ($) {
+                $("body").css("display", "none");
+                $("body").fadeIn(2000);
+                $("a.transition").click(function (event) {
+                    event.preventDefault();
+                    linkLocation = this.href;
+                    $("body").fadeOut(1000, redirectPage);
+                });
+                function redirectPage() {
+                    window.location = linkLocation;
+                }
+            });
+        </script>
     </body>
 </html>
