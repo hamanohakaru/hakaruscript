@@ -20,9 +20,9 @@
             <h1 style="color: #ff5675; font-size:20px;">
                 &hearts;
                 <span style="color: transparent; background-image: linear-gradient(90deg, red, orange, yellow, green, blue, navy, purple); -webkit-background-clip: text"
-                    >하(찮아도 너무 하찮은)씨가문</span
-                >
-                의 난이도 최상 게임 &hearts;
+                    >주현히메 VS 말랑석</span
+                > &hearts;<br><br>
+                <span style="margin-left:-37px;">소원권 1개 걸고 하는 지옥의 게임</span>
             </h1>
         </div>
         <canvas id="myCanvas" width="480" height="320"></canvas>
@@ -33,10 +33,10 @@
             var ballRadius = 4;
             var x = canvas.width / 2;
             var y = canvas.height - 30;
-            var dx = 2;
-            var dy = -2;
+            var dx = 4;
+            var dy = -4;
             var paddleHeight = 2;
-            var paddleWidth = 25;
+            var paddleWidth = 21;
             var paddleX = (canvas.width - paddleWidth) / 2;
             var rightPressed = false;
             var leftPressed = false;
@@ -48,7 +48,7 @@
             var brickOffsetTop = 40;
             var brickOffsetLeft = 15;
             var score = 0;
-            var lives = 6;
+            var lives = 5;
 
             var bricks = [];
             for (var c = 0; c < brickColumnCount; c++) {
@@ -168,8 +168,8 @@
                         } else {
                             x = canvas.width / 2;
                             y = canvas.height - 30;
-                            dx = 2;
-                            dy = -2;
+                            dx = 4;
+                            dy = -4;
                             paddleX = (canvas.width - paddleWidth) / 2;
                         }
                     }
@@ -191,8 +191,8 @@
 
         <span style="margin-top: 120px; display: flex; justify-content: center; font-size: 18px; font-weight: 600; color: #ff5675">마우스 커서는 이쪽에서 하는게 게임하기 편함</span>
         <p style="margin-top: 50px; margin-bottom:50px; display: flex; justify-content: center; font-size: 16px; font-weight: 600; color: #ff5675">
-            제작자 : 하씨그룹 장남&nbsp&nbsp <span style="color: black">"</span><span style="color: transparent; background-image: linear-gradient(90deg, red, orange, yellow, green, blue, navy, purple); -webkit-background-clip: text"
-                    ">하마노 하카루</span
+            제작자 : 바로바로&nbsp&nbsp <span style="color: black">"</span><span style="color: transparent; background-image: linear-gradient(90deg, red, orange, yellow, green, blue, navy, purple); -webkit-background-clip: text"
+                    ">이준석 저준석 말랑석</span
             ><span style="color: black">"</span>
         </p>
     </body>
